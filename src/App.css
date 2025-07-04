@@ -1,0 +1,28 @@
+.home {
+    background-image: url(https://i.pinimg.com/1200x/d4/fa/b6/d4fab612654f973fbd61712d7a227094.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.ani{
+    animation: disk 5s infinite linear;
+}
+
+@keyframes disk {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.drop_menu ul li:hover{
+    color: rgb(252, 107, 107);
+}

@@ -1,0 +1,115 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,900&display=swap');
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+}
+
+.trans{
+  transition: all 0.1s ease-in-out;
+}
+
+
+  /* HTML: <div class="tooltip">This is a Tooltip with a gradient or solid coloration and with border radius </div> */
+/* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> */
+.rightmsg {
+  color: #fff;
+  font-size: 12px;
+  max-width: 28ch;
+  text-align: center;
+}
+.rightmsg {
+  /* triangle dimension */
+  --b: 0.5em; /* control the base */
+  --h: .5em; /* control the height */
+
+  --c:#024399;
+
+  padding: 1em;
+  border-radius: 1.2em;
+  border-bottom-right-radius: 0;
+  clip-path: polygon(100% 0,0 0,0 100%,
+    calc(100% - var(--b)) 100%,
+    calc(100% + var(--h)) calc(100% + var(--h)),
+    100% calc(100% - var(--b)));
+  background: var(--c);
+  border-image: conic-gradient(var(--c) 0 0) 0 999 999 0/
+    0 calc(var(--h) + var(--b)) calc(var(--h) + var(--b)) 0/0 var(--h) var(--h) 0;
+}
+
+/* HTML: <div class="tooltip">This is a Speech Bubble with a solid coloration and with border radius </div> */
+.leftmsg {
+  
+  font-size: 12px;
+  max-width: 28ch;
+  text-align: center;
+}
+.leftmsg {
+  /* triangle dimension */
+  --b: 1em; /* control the base */
+  --h: .7em; /* control the height */
+
+  --c:#024399;
+
+  padding: 1em;
+  border-radius: 1.2em;
+  border-bottom-left-radius: 0;
+  clip-path: polygon(0 0,100% 0,100% 100%,
+    var(--b) 100%,
+    calc(-1*var(--h)) calc(100% + var(--h)),
+    0 calc(100% - var(--b)));
+}
